@@ -58,12 +58,6 @@ def eig(data):
 # 获取前k个特征值对应的特征向量
 def geteig_k(eig_value,eig_vector,k):
 
-    #new_eig=zip(eig_value,eig_vector)
-
-    #new_eig.sort(key= lambda k:k[0],reverse=True)
-
-    #un_eig = zip(*new_eig)
-
 
 
    # new_vector=un_eig[1]
