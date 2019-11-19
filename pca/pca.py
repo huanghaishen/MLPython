@@ -60,8 +60,6 @@ def geteig_k(eig_value,eig_vector,k):
 
 
 
-   # new_vector=un_eig[1]
-
     eigIndex = np.argsort(eig_value)
     eigVecIndex = eigIndex[:-(k + 1):-1]
     feature = eig_vector[:, eigVecIndex]
