@@ -57,22 +57,14 @@ def eig(data):
 
 # 获取前k个特征值对应的特征向量
 def geteig_k(eig_value,eig_vector,k):
-
-
-
     eigIndex = np.argsort(eig_value)
     eigVecIndex = eigIndex[:-(k + 1):-1]
     feature = eig_vector[:, eigVecIndex]
-    #new_data = np.dot(normal_data, feature)
-
-
-
     gg=eig_value[0:k].sum()/eig_value[:].sum()
     print "前"+str(k)+"个特征值贡献率为："+str(gg)
 
     return feature
 
-    #print neweig
 
 def testarray():
     a=np.array([[11,12,13,14],[21,22,23,24],[31,32,33,34]])
